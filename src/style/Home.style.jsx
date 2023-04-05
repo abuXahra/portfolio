@@ -68,13 +68,11 @@ export const SearcContainer = styled.div`
 
 export const ProfilePicture = styled.div`
   
-    width: 40%;
+    width: 50%;
     padding: 5px;
     img{
         width: 100%;
-        /* box-shadow: 10px 10px 5px #ccc; */
-        background-color: black; //#413B3D;
-        padding: 20px;
+        box-shadow: 10px 10px 5px #ccc;
         border-radius: 20px;
     }
 

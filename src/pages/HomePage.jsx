@@ -6,19 +6,15 @@ import {
     StyleHomePage,
     Overlay, OverlayContent, SearcContainer, ProfilePicture, ProfileDetail, Container, CertContainer, ProjectDelivered, ProjectCard, SpaceStyled, SpaceStyled2, ProjectBody, ProjectStatus
 } from '../style/Home.style';
-import Profile from '../images/profile.png';
+import Profile from '../images/profilepix.jpeg';
 
 import AnchorLink from '../components/AnchorLink';
-import ContactPage from './ContactPage';
-import { FaPlane } from 'react-icons/fa'
-import { MdHotel } from 'react-icons/md'
-import { TfiWorld } from 'react-icons/tfi'
-import { BiDownArrow } from 'react-icons/bi'
+
 import { voteCategories } from '../data/voteCategorJson';
 import SkillCard from '../components/SkillCard';
-import portfolio_1 from '../images/mishal.png'
-import Button from '../components/Button';
-import { projectItems } from '../data/projectItems';
+
+import { projectItems } from '../data/projectItems'
+import { projects } from '../data/project'
 
 
 
@@ -49,7 +45,8 @@ const HomePage = () => {
                                 <img src={Profile} alt="" srcset="" />
                             </ProfilePicture>
                             <ProfileDetail>
-                                An IT specialist with superb troubleshooting skills and a cross-functional
+                                <h3>ISAH ABDULMUMIN</h3><br /><br />
+                                He is an IT specialist with superb troubleshooting skills and a cross-functional
                                 background in successful IT management strategies, and innovative
                                 technical support solutions. He has garnered valuable workplace
                                 experience and his over 10 years of work experience in the IT sphere makes
@@ -135,7 +132,7 @@ const HomePage = () => {
 
                 <ProjectDelivered>
 
-                    {projectItems.map((project, index) => (
+                    {projects.map((project, index) => (
                         <ProjectCard key={index}>
                             <img src={project.imgUrl} alt="" srcset="" />
                             <ProjectBody>
@@ -163,7 +160,6 @@ const HomePage = () => {
                                                     url={''}
                                                 />
                                             </span>
-
                                         )
                                     }
                                 </ProjectStatus>
@@ -208,7 +204,6 @@ const HomePage = () => {
                                                     url={''}
                                                 />
                                             </span>
-
                                         )
                                     }
                                 </ProjectStatus>
