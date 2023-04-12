@@ -21,7 +21,13 @@ export const HeaderList = styled.div`
 display: flex;
 gap: 40px;
 justify-content: center;
-    
+ align-items: center;
+
+ @media (max-width: 768px) {
+    display: ${({ isOpen }) => isOpen ? "flex" : "none"};
+    flex-direction: column;
+ }
+
 `
 
 export const HeaderListItem = styled.div`
@@ -37,6 +43,25 @@ export const HeaderListItem = styled.div`
 
 export const ReactIconStyled = styled.span`
 color: #61DAFB;
+cursor: pointer;
+`
+
+export const HamburgerIconStyled = styled.span`
+color: #fff;
+cursor: pointer;
+font-size: 20px;
+display: none;
+
+@media (max-width: 768px) {
+    display: flex;
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: #01434c;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+ }
 `
 
 export const FlutterIconStyled = styled.span`

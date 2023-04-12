@@ -45,7 +45,7 @@ function App() {
   };
 
   const handleFlutterClick = () => {
-    refHome.current?.scrollIntoView({ behavior: 'smooth' });
+    refFlutter.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
