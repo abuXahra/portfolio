@@ -4,21 +4,22 @@ import {
     HeaderSection,
     Heading,
     StyleHomePage,
-    Overlay, OverlayContent, SearcContainer, ProfilePicture, ProfileDetail, Container, CertContainer, ProjectDelivered, ProjectCard, SpaceStyled, SpaceStyled2, ProjectBody, ProjectStatus
+    Overlay, OverlayContent, SearcContainer, ProfilePicture, ProfileDetail, Container, CertContainer, ProjectDelivered, ProjectCard, SpaceStyled, SpaceStyled2, ProjectBody, ProjectStatus, ProjectCardf
 } from '../style/Home.style';
 import Profile from '../images/profilepix.jpeg';
 
 import AnchorLink from '../components/AnchorLink';
 
 import { voteCategories } from '../data/voteCategorJson';
+
 import SkillCard from '../components/SkillCard';
 
 import { projectItems } from '../data/projectItems'
 import { projects } from '../data/project'
+import { flutter } from '../data/flutter'
 
 
-
-const HomePage = () => {
+const HomePage = ({ refReact, refWordpress }) => {
 
     const containerUserProperty = {
         bg: "#01434c",
@@ -121,10 +122,9 @@ const HomePage = () => {
 
                 </CertContainer>
             </Container>
-
-
             <Container
-                bg={'#c4c4c4'}
+                bg={'#F7FAFD'}
+                ref={refReact}
             >
                 <h2>React JS Projects Delivered</h2>
                 <hr />
@@ -139,7 +139,7 @@ const HomePage = () => {
                                 <h3>{project.title}</h3>
                                 <p>{project.description}</p>
                                 <ProjectStatus>
-                                    <p><strong>Status: </strong> {project.status}</p>
+                                    <p><strong>Hosting Status: </strong> {project.status}</p>
 
                                     {
                                         project.status == "On Production" ? (
@@ -169,7 +169,7 @@ const HomePage = () => {
                 </ProjectDelivered>
             </Container>
 
-            <Container>
+            <Container ref={refWordpress}>
                 <h2>Wordpress Project Delivered</h2>
                 <hr />
                 <SpaceStyled2 />
@@ -183,7 +183,7 @@ const HomePage = () => {
                                 <h3>{project.title}</h3>
                                 <p>{project.description}</p>
                                 <ProjectStatus>
-                                    <p><strong>Status: </strong> {project.status}</p>
+                                    <p><strong>Hosting Status: </strong> {project.status}</p>
 
                                     {
                                         project.status == "On Production" ? (
@@ -214,7 +214,52 @@ const HomePage = () => {
                 <SpaceStyled />
             </Container>
 
+            <Container
+                bg={'#F7FAFD'}
+                ref={refReact}
+            >
+                <h2>Flutter Projects Delivered</h2>
+                <hr />
+                <SpaceStyled2 />
 
+                <ProjectDelivered>
+
+                    {flutter.map((project, index) => (
+                        <ProjectCard key={index}>
+                            <img src={project.imgUrl} alt="" srcset="" />
+                            <ProjectBody>
+                                <h3>{project.title}</h3>
+                                <p>{project.description}</p>
+                                <ProjectStatus>
+                                    <p><strong>App Status: </strong> {project.status}</p>
+
+                                    {
+                                        project.status == "Online" ? (
+                                            <AnchorLink
+                                                btnDisp={'flex'}
+                                                text={'Install App'}
+                                                txtColor={'white'}
+                                                bgColor={'#01434c'}
+                                                url={project.siteUrl}
+                                            />
+                                        ) : (
+                                            <span onClick={prevendHandler}>
+                                                <AnchorLink
+                                                    btnDisp={'flex'}
+                                                    text={'Not in Playstore'}
+                                                    txtColor={'white'}
+                                                    bgColor={'#01434c'}
+                                                    url={''}
+                                                />
+                                            </span>
+                                        )
+                                    }
+                                </ProjectStatus>
+                            </ProjectBody>
+                        </ProjectCard>
+                    ))}
+                </ProjectDelivered>
+            </Container>
 
         </StyleHomePage>
     );

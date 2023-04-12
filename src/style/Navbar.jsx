@@ -5,11 +5,6 @@ export const Nav = styled.div`
 padding: 0;
 display: flex;
 background: #ffffff;
-
-position: sticky;
-  top: 0;
-  transition: 0.8s all ease;
-
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: center;

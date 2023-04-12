@@ -11,6 +11,7 @@ import bunmi from '../images/wp/1a.PNG'
 import justice from '../images/wp/1b.PNG'
 import istiqoma from '../images/wp/1f.PNG'
 
+
 export const projectItems = [
 
     {

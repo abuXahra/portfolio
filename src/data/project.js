@@ -4,14 +4,11 @@
 import restaurant from '../images/rj/restaurant.png'
 import skill from '../images/rj/skill.PNG'
 import huddle from '../images/rj/huddle.PNG'
-import logical from '../images/wp/Logical.png'
-import trebb from '../images/wp/trebb.PNG'
-import food from '../images/wp/Food.png'
-import health from '../images/wp/health.PNG'
-import dental from '../images/wp/1e.PNG'
-import bunmi from '../images/wp/1a.PNG'
-import justice from '../images/wp/1b.PNG'
-import istiqoma from '../images/wp/1f.PNG'
+import connect from '../images/rj/connect.PNG'
+import expense from '../images/rj/expense.PNG'
+import course from '../images/rj/course.PNG'
+import potforlio from '../images/rj/pot.PNG'
+
 
 export const projects = [
 
@@ -39,8 +36,30 @@ export const projects = [
     {
         title: 'Connected Award',
         description: "Conneced Award is a react website designed and deployed to netlify in 2022",
-        imgUrl: huddle,
-        siteUrl: "https://huddletwo.netlify.app",
+        imgUrl: connect,
+        siteUrl: "https://connect-award.netlify.app/",
         status: "On Production",
     },
+    {
+        title: 'My Portfolio',
+        description: "Portfolio is a react app developed and deployed to show case my cv and previous projects in 2023",
+        imgUrl: potforlio,
+        siteUrl: "https://myporftolio.netlify.app",
+        status: "On Production",
+    },
+    {
+        title: 'Expense Tracking App',
+        description: "Expense Tracking App is a react app developed and deployed to netlify in 2023",
+        imgUrl: expense,
+        siteUrl: "https://nxpense.netlify.app/",
+        status: "On Production",
+    },
+    {
+        title: 'Course Goal',
+        description: "Course Goal is a react app developed and deployed to netlify in 2023",
+        imgUrl: course,
+        siteUrl: "https://coursegoal.netlify.app",
+        status: "On Production",
+    },
+
 ]

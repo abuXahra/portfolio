@@ -5,6 +5,9 @@ export const HeaderStyled = styled.div`
      color: white;
      display: flex;
      justify-content: center;
+     position: sticky;
+  top: 0;
+  transition: 0.8s all ease;
 `
 
 export const HeaderContainer = styled.div`

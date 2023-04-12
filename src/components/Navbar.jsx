@@ -7,7 +7,7 @@ import AnchorLink from './AnchorLink';
 import siteLogo from '../images/port.png';
 
 
-const Navbar = () => {
+const Navbar = ({ refHome }) => {
 
     const [isOpen, setisOpen] = useState(false)
     const [spanItem, setspanItem] = useState(<FaBars />)
@@ -24,7 +24,7 @@ const Navbar = () => {
     }
 
     return (
-        <Nav>
+        <Nav ref={refHome}>
             <Logo href="/">
                 <img src={siteLogo} alt="" srcset="" />
             </Logo>

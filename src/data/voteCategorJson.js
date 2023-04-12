@@ -4,8 +4,8 @@ import { BsFileWord, BsGit } from 'react-icons/bs'
 import { RiLoader3Line, RiFlutterFill } from 'react-icons/ri'
 import { DiJavascript1 } from 'react-icons/di'
 import { SiAdobefonts, SiDart, SiHuawei } from 'react-icons/si'
-import { GiParachute, } from 'react-icons/gi'
-import { BiLoaderAlt, } from 'react-icons/bi'
+import { GiParachute, GiWireframeGlobe } from 'react-icons/gi'
+import { FiFigma, } from 'react-icons/fi'
 export const voteCategories = [
     {
         voteIcon: <FaReact />,
@@ -17,6 +17,17 @@ export const voteCategories = [
         title: "Wordpress",
         arrowIcon: <RiLoader3Line />,
     },
+    {
+        voteIcon: <GiWireframeGlobe />,
+        title: "WireFrame",
+        arrowIcon: <RiLoader3Line />,
+    },
+    {
+        voteIcon: <FiFigma />,
+        title: "Figma",
+        arrowIcon: <RiLoader3Line />,
+    },
+
     {
         voteIcon: <RiFlutterFill />,
         title: "Flutter",

@@ -211,6 +211,8 @@ export const ProjectCard = styled.div`
    
 `
 
+
+
 export const ProjectBody = styled.div`
     width: 100%;
     padding: 10px;

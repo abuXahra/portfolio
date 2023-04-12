@@ -2,7 +2,7 @@
 import ContactPage from "./pages/ContactPage";
 import ExamplePage from "./pages/ExamplePage";
 import HomePage from "./pages/HomePage";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -25,13 +25,36 @@ function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+
+  const refReact = useRef(null);
+  const refWordpress = useRef(null);
+  const refHome = useRef(null)
+
+  const handleRefReactClick = () => {
+    refReact.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleWordpressClick = () => {
+    refWordpress.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleHomeClick = () => {
+    refHome.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+
   return (
     <>
       <Router>
-        <Navbar />
-        <Header />
+        <Navbar refHome={refHome} />
+        <Header
+          handleRefReactClick={handleRefReactClick}
+          handleWordpressClick={handleWordpressClick}
+          handleHomeClick={handleHomeClick}
+        />
         <Routes>
-          <Route exact path='/' element={<HomePage />}></Route>
+          <Route exact path='/' element={<HomePage refReact={refReact} refWordpress={refWordpress} />}></Route>
           <Route exact path='/example' element={<ExamplePage />}></Route>
           <Route exact path='/contact' element={<ContactPage />}></Route>
           <Route exact path='/about' element={<About />}></Route>
