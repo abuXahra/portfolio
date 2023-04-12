@@ -54,15 +54,15 @@ const Header = ({
                     </HeaderListItem>
                     <HeaderListItem onClick={ClickHotelHandler} active={isHotelActive}>
                         <ReactIconStyled><FaReact /></ReactIconStyled>
-                        <span onClick={handleRefReactClick}>React Projects</span>
+                        <span onClick={handleRefReactClick}>React </span>
                     </HeaderListItem>
                     <HeaderListItem onClick={ClickFlightHandler} active={isFlightActive}>
                         <WordpressIconStyled> <FaWordpressSimple /></WordpressIconStyled>
-                        <span onClick={handleWordpressClick}>Worpress Projects</span>
+                        <span onClick={handleWordpressClick}>Worpress </span>
                     </HeaderListItem>
                     <HeaderListItem onClick={handleFlutterClick} active={isVisaActive}>
                         <FlutterIconStyled><SiFlutter /></FlutterIconStyled>
-                        <span>Flutter Projects</span>
+                        <span>Flutter </span>
                     </HeaderListItem>
                 </HeaderList>
             </HeaderContainer>
