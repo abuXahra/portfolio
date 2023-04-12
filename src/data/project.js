@@ -44,7 +44,7 @@ export const projects = [
         title: 'My Portfolio',
         description: "Portfolio is a react app developed and deployed to show case my cv and previous projects in 2023",
         imgUrl: potforlio,
-        siteUrl: "https://myporftolio.netlify.app",
+        siteUrl: "https://isahportfolio.netlify.app/",
         status: "On Production",
     },
     {

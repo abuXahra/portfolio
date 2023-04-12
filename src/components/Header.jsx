@@ -4,7 +4,8 @@ import { FaWordpressSimple, FaReact, FaHome } from 'react-icons/fa'
 import { FlutterIconStyled, HeaderContainer, HeaderList, HeaderListItem, HeaderStyled, ReactIconStyled, WordpressIconStyled } from '../style/Header.style';
 
 
-const Header = ({ handleRefReactClick, handleWordpressClick, handleHomeClick }) => {
+const Header = ({
+    handleRefReactClick, handleWordpressClick, handleHomeClick, handleFlutterClick }) => {
 
     const [isFlightActive, setisFlightActive] = useState(false);
     const [isHotelActive, setisHotelActive] = useState(false);
@@ -59,7 +60,7 @@ const Header = ({ handleRefReactClick, handleWordpressClick, handleHomeClick }) 
                         <WordpressIconStyled> <FaWordpressSimple /></WordpressIconStyled>
                         <span onClick={handleWordpressClick}>Worpress Projects</span>
                     </HeaderListItem>
-                    <HeaderListItem onClick={ClickVisaHandler} active={isVisaActive}>
+                    <HeaderListItem onClick={handleFlutterClick} active={isVisaActive}>
                         <FlutterIconStyled><SiFlutter /></FlutterIconStyled>
                         <span>Flutter Projects</span>
                     </HeaderListItem>

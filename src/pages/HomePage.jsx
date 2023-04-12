@@ -19,7 +19,7 @@ import { projects } from '../data/project'
 import { flutter } from '../data/flutter'
 
 
-const HomePage = ({ refReact, refWordpress }) => {
+const HomePage = ({ refReact, refWordpress, refFlutter }) => {
 
     const containerUserProperty = {
         bg: "#01434c",
@@ -216,7 +216,7 @@ const HomePage = ({ refReact, refWordpress }) => {
 
             <Container
                 bg={'#F7FAFD'}
-                ref={refReact}
+                ref={refFlutter}
             >
                 <h2>Flutter Projects Delivered</h2>
                 <hr />

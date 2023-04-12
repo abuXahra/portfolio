@@ -29,7 +29,8 @@ function App() {
 
   const refReact = useRef(null);
   const refWordpress = useRef(null);
-  const refHome = useRef(null)
+  const refHome = useRef(null);
+  const refFlutter = useRef(null);
 
   const handleRefReactClick = () => {
     refReact.current?.scrollIntoView({ behavior: 'smooth' });
@@ -43,6 +44,9 @@ function App() {
     refHome.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleFlutterClick = () => {
+    refHome.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <>
@@ -52,9 +56,10 @@ function App() {
           handleRefReactClick={handleRefReactClick}
           handleWordpressClick={handleWordpressClick}
           handleHomeClick={handleHomeClick}
+          handleFlutterClick={handleFlutterClick}
         />
         <Routes>
-          <Route exact path='/' element={<HomePage refReact={refReact} refWordpress={refWordpress} />}></Route>
+          <Route exact path='/' element={<HomePage refReact={refReact} refWordpress={refWordpress} refFlutter={refFlutter} />}></Route>
           <Route exact path='/example' element={<ExamplePage />}></Route>
           <Route exact path='/contact' element={<ContactPage />}></Route>
           <Route exact path='/about' element={<About />}></Route>
