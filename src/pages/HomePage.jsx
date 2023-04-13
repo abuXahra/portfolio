@@ -225,7 +225,7 @@ const HomePage = ({ refReact, refWordpress, refFlutter }) => {
                 <ProjectDelivered>
 
                     {flutter.map((project, index) => (
-                        <ProjectCard key={index}>
+                        <ProjectCardf key={index}>
                             <img src={project.imgUrl} alt="" srcset="" />
                             <ProjectBody>
                                 <h3>{project.title}</h3>
@@ -237,7 +237,7 @@ const HomePage = ({ refReact, refWordpress, refFlutter }) => {
                                         project.status == "Online" ? (
                                             <AnchorLink
                                                 btnDisp={'flex'}
-                                                text={'Install App'}
+                                                text={'Install'}
                                                 txtColor={'white'}
                                                 bgColor={'#01434c'}
                                                 url={project.siteUrl}
@@ -246,7 +246,7 @@ const HomePage = ({ refReact, refWordpress, refFlutter }) => {
                                             <span onClick={prevendHandler}>
                                                 <AnchorLink
                                                     btnDisp={'flex'}
-                                                    text={'Not in Playstore'}
+                                                    text={'Unavailable'}
                                                     txtColor={'white'}
                                                     bgColor={'#01434c'}
                                                     url={''}
@@ -256,7 +256,7 @@ const HomePage = ({ refReact, refWordpress, refFlutter }) => {
                                     }
                                 </ProjectStatus>
                             </ProjectBody>
-                        </ProjectCard>
+                        </ProjectCardf>
                     ))}
                 </ProjectDelivered>
             </Container>

@@ -208,6 +208,41 @@ export const ProjectCard = styled.div`
     width: 100%;
    }
 
+
+   @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+   }
+
+`
+
+export const ProjectCardf = styled.div`
+    width: 22%;
+   height: auto;
+   border-radius: 10px;
+   background-color: white;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+
+   img{
+    border-radius: 10px 10px 0 0; 
+    width: 100%;
+    height: 400px;
+   }
+
+
+   @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+   }
    
 `
 
