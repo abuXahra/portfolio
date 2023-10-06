@@ -8,10 +8,17 @@ import connect from '../images/rj/connect.PNG'
 import expense from '../images/rj/expense.PNG'
 import course from '../images/rj/course.PNG'
 import potforlio from '../images/rj/pot.PNG'
-
+import mernblog from '../images/rj/mernblog.PNG'
 
 export const projects = [
 
+    {
+        title: 'MERN Stack News Blog',
+        description: "I am working on the this MERN STACK blog",
+        imgUrl: mernblog,
+        siteUrl: "https://mynewsblog.netlify.app/",
+        status: "On Production",
+    },
     {
         title: 'ELI Restaurant',
         description: "It is resturant frontend project designed and deployed to netlify",
