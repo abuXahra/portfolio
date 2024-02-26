@@ -10,9 +10,36 @@ import dental from '../images/wp/1e.PNG'
 import bunmi from '../images/wp/1a.PNG'
 import justice from '../images/wp/1b.PNG'
 import istiqoma from '../images/wp/1f.PNG'
+import noor from '../images/wp/noor.PNG'
+import blizard from '../images/wp/blizzard.PNG'
+import manzo from '../images/wp/manzo.PNG'
 
 
 export const projectItems = [
+
+    {
+        title: 'Noor Alaya.',
+        description: "It is Interior website designed and hosted for Noor Alaya Limited",
+        imgUrl: noor,
+        siteUrl: "https://nooralaya.com/",
+        status: "On Production",
+    },
+    {
+        title: 'Blizzard',
+        description: "It is an Real Estate website designed and hosted for Blizzard Nig. Ltd",
+        imgUrl: blizard,
+        siteUrl: "https://blizzard.com.ng/",
+        status: "On Production",
+    },
+    {
+        title: 'Manzo Travels',
+        description: "It is a Travel & Tour website designed and hosted for Manzo Travel & Tours Limted",
+        imgUrl: manzo,
+        siteUrl: "https://manzotravels.com.ng/",
+        status: "On Production",
+    },
+
+
 
     {
         title: 'Calitzo Consult Ltd.',

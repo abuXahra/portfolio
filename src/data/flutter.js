@@ -2,10 +2,10 @@
 import skill from '../images/flutter/skill.jpeg'
 import mishal from '../images/flutter/mishal.jpeg'
 import sani from '../images/flutter/sani.jpeg'
-import hanny from '../images/flutter/han.PNG'
+import hanny from '../images/flutter/han.png'
 import rel from '../images/flutter/reliance.jpeg'
 
-import dubai from '../images/flutter/dubai.PNG'
+import dubai from '../images/flutter/dubai.png'
 import food from '../images/wp/Food.png'
 import health from '../images/wp/health.PNG'
 import dental from '../images/wp/1e.PNG'

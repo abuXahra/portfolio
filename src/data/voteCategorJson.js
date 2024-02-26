@@ -1,22 +1,18 @@
 import { FaArrowRight } from 'react-icons/fa';
 import { FaMicrosoft, FaFilePowerpoint, FaGithub, FaHtml5, FaReact, FaWordpress, FaCss3 } from 'react-icons/fa'
 import { BsFileWord, BsGit } from 'react-icons/bs'
-import { RiLoader3Line, RiFlutterFill, RiLoader2Line } from 'react-icons/ri'
-import { DiJavascript1, DiMongodb } from 'react-icons/di'
+import { RiLoader3Line, RiFlutterFill } from 'react-icons/ri'
+import { DiJavascript1 } from 'react-icons/di'
 import { SiAdobefonts, SiDart, SiHuawei } from 'react-icons/si'
 import { GiParachute, GiWireframeGlobe } from 'react-icons/gi'
 import { FiFigma, } from 'react-icons/fi'
 export const voteCategories = [
     {
-        voteIcon: <DiMongodb />,
-        title: "MongoDb",
-        arrowIcon: <RiLoader2Line />,
-    },
-    {
         voteIcon: <FaReact />,
         title: "React Js",
         arrowIcon: <RiLoader3Line />,
-    }, {
+    },
+    {
         voteIcon: <FaWordpress />,
         title: "Wordpress",
         arrowIcon: <RiLoader3Line />,

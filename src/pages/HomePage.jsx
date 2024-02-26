@@ -47,15 +47,15 @@ const HomePage = ({ refReact, refWordpress, refFlutter }) => {
                             </ProfilePicture>
                             <ProfileDetail>
                                 <h3>ISAH ABDULMUMIN</h3><br /><br />
-                                He is an IT specialist with superb troubleshooting skills and a cross-functional
-                                background in successful IT management strategies, and innovative
+                                He is an IT specialist with superb knowledge and a cross-functional
+                                background in successful software development, and innovative
                                 technical support solutions. He has garnered valuable workplace
                                 experience and his over 10 years of work experience in the IT sphere makes
-                                him an asset to the workplace <br /><br />
-                                Lead Web Developer || WordPress, React Js and Flutter Developer || IT Consultant || Project Manager || Project Coordinator
+                                him an asset to the workplace  <br /><br />
+                                Lead Web Developer || MERN Stack Developer, WordPress, React Js  and Flutter Developer || IT Consultant || Project Manager || Project Coordinator
                                 <br /><br />
                                 <h3>Core Competency</h3>
-                                - Reactjs - Wordpress - Flutter
+                                - MERN Stack - Wordpress - Flutter
                                 <br />
                                 <b></b><br />
                                 <a href="https://github.com/abuXahra">Github Profile</a>
@@ -84,6 +84,7 @@ const HomePage = ({ refReact, refWordpress, refFlutter }) => {
                 <hr />
                 <CertContainer>
                     <ul>
+                        <li>Software Development (MERN)</li>
                         <li>Frontend Development React JS</li>
                         <li>Digital Entrepreneur Capacity Building for Industry Stakeholders</li>
                         <li>Introduction to Flutter Development using Dart</li>
@@ -110,8 +111,12 @@ const HomePage = ({ refReact, refWordpress, refFlutter }) => {
                         <li>
                             -
                         </li>
+                        <li>
+                            -
+                        </li>
                     </ul>
                     <ul>
+                        <li> Nov 2023</li>
                         <li> May 2022</li>
                         <li> Jan. 2022</li>
                         <li> Nov. 2021</li>

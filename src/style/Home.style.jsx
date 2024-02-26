@@ -62,6 +62,13 @@ export const SearcContainer = styled.div`
     display: flex;
     padding:50px;
     justify-content: space-between;
+
+    
+@media (max-width: 768px){
+    
+    flex-direction: column;
+    padding:10px;
+}
 `
 
 
@@ -76,6 +83,10 @@ export const ProfilePicture = styled.div`
         border-radius: 20px;
     }
 
+    @media (max-width: 768px){
+    width: 100%;
+
+}
 `
 
 export const ProfileDetail = styled.div`
@@ -94,6 +105,13 @@ justify-content: center;
         color: yellow;
         text-decoration: none;
     }
+
+    @media (max-width: 768px){
+    width: 100%;
+    padding-top: 50px;
+    margin-left: 0;
+
+}
 `
 
 export const SpaceStyled = styled.div`
