@@ -6,7 +6,7 @@ import {
     StyleHomePage,
     Overlay, OverlayContent, SearcContainer, ProfilePicture, ProfileDetail, Container, CertContainer, ProjectDelivered, ProjectCard, SpaceStyled, SpaceStyled2, ProjectBody, ProjectStatus, ProjectCardf
 } from '../style/Home.style';
-import Profile from '../images/profilepix.jpeg';
+import Profile from '../images/professional.png';
 
 import AnchorLink from '../components/AnchorLink';
 
@@ -17,9 +17,11 @@ import SkillCard from '../components/SkillCard';
 import { projectItems } from '../data/projectItems'
 import { projects } from '../data/project'
 import { flutter } from '../data/flutter'
+import { mern } from '../data/mern';
+import pdfFile from '../pdf/cv.pdf'
 
 
-const HomePage = ({ refReact, refWordpress, refFlutter }) => {
+const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
 
     const containerUserProperty = {
         bg: "#01434c",
@@ -52,14 +54,19 @@ const HomePage = ({ refReact, refWordpress, refFlutter }) => {
                                 technical support solutions. He has garnered valuable workplace
                                 experience and his over 10 years of work experience in the IT sphere makes
                                 him an asset to the workplace  <br /><br />
-                                Lead Web Developer || MERN Stack Developer, WordPress, React Js  and Flutter Developer || IT Consultant || Project Manager || Project Coordinator
+                                Lead Web Developer || Full-Stack Developer (MERN), WordPress, React Js  and Flutter Developer || IT Consultant || Project Manager || Project Coordinator
                                 <br /><br />
                                 <h3>Core Competency</h3>
                                 - MERN Stack - Wordpress - Flutter
                                 <br />
                                 <b></b><br />
-                                <a href="https://github.com/abuXahra">Github Profile</a>
+
+                                <div>
+                                    <a href="https://github.com/abuXahra">Github Profile</a>
+                                    <a href={pdfFile}>Download my CV here</a>
+                                </div>
                             </ProfileDetail>
+
                         </SearcContainer>
                     </OverlayContent>
                 </Overlay>
@@ -127,6 +134,58 @@ const HomePage = ({ refReact, refWordpress, refFlutter }) => {
 
                 </CertContainer>
             </Container>
+
+
+
+            <Container
+                bg={'#FFF'}
+                ref={refMern}
+            >
+                <h2>Full-Stack Projects</h2>
+                <hr />
+                <SpaceStyled2 />
+
+                <ProjectDelivered>
+
+                    {mern.map((project, index) => (
+                        <ProjectCard key={index}>
+                            <img src={project.imgUrl} alt="" srcset="" />
+                            <ProjectBody>
+                                <h3>{project.title}</h3>
+                                <p>{project.description}</p>
+                                <ProjectStatus>
+                                    <p><strong>Hosting Status: </strong> {project.status}</p>
+
+                                    {
+                                        project.status == "Online" ? (
+                                            <AnchorLink
+                                                btnDisp={'flex'}
+                                                text={'Visit Site'}
+                                                txtColor={'white'}
+                                                bgColor={'#01434c'}
+                                                url={project.siteUrl}
+                                            />
+                                        ) : (
+                                            <span onClick={prevendHandler}>
+                                                <AnchorLink
+                                                    btnDisp={'flex'}
+                                                    text={'Not Reachable'}
+                                                    txtColor={'white'}
+                                                    bgColor={'#01434c'}
+                                                    url={''}
+                                                />
+                                            </span>
+                                        )
+                                    }
+                                </ProjectStatus>
+                            </ProjectBody>
+                        </ProjectCard>
+                    ))}
+                </ProjectDelivered>
+            </Container>
+
+
+
             <Container
                 bg={'#F7FAFD'}
                 ref={refReact}

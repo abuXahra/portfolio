@@ -77,10 +77,12 @@ export const ProfilePicture = styled.div`
   
     width: 50%;
     padding: 5px;
+    border-radius: 100%;
+    background-color: white;
     img{
         width: 100%;
         box-shadow: 10px 10px 5px #ccc;
-        border-radius: 20px;
+        border-radius: 100%;
     }
 
     @media (max-width: 768px){
@@ -100,12 +102,17 @@ justify-content: center;
     font-size: 19px;
     margin-left: 90px;
     line-height: 1.5;
-
-    a{
+div{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+a{
         color: yellow;
         text-decoration: none;
     }
 
+}
+    
     @media (max-width: 768px){
     width: 100%;
     padding-top: 50px;
@@ -130,7 +137,7 @@ export const Container = styled.section`
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 50px 0;
+        padding: 70px 0;
         hr{
             border: 0.5px dotted ${({ hrColor }) => hrColor || "#01434ce7"} ;
             width: ${({ hrwidth }) => hrwidth || "20%"};

@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { SiFlutter } from 'react-icons/si'
-import { FaWordpressSimple, FaReact, FaHome, FaBars } from 'react-icons/fa'
+import { FaWordpressSimple, FaReact, FaHome, FaBars, FaNodeJs } from 'react-icons/fa'
 import { BiMenuAltRight } from 'react-icons/bi'
-import { FlutterIconStyled, HamburgerIconStyled, HeaderContainer, HeaderList, HeaderListItem, HeaderStyled, ReactIconStyled, WordpressIconStyled } from '../style/Header.style';
+import { FlutterIconStyled, HamburgerIconStyled, HeaderContainer, HeaderList, HeaderListItem, HeaderStyled, MernIconStyled, ReactIconStyled, WordpressIconStyled } from '../style/Header.style';
 import { GrClose } from 'react-icons/gr';
 
 
 const Header = ({
-    handleRefReactClick, handleWordpressClick, handleHomeClick, handleFlutterClick }) => {
+    handleRefMernClick, handleRefReactClick, handleWordpressClick, handleHomeClick, handleFlutterClick }) => {
 
     const [isFlightActive, setisFlightActive] = useState(false);
     const [isHotelActive, setisHotelActive] = useState(false);
     const [isVisaActive, setisVisaActive] = useState(false);
     const [isCarActive, setisCarActive] = useState(true);
+    const [isMernActive, setIsMernActive] = useState(false);
 
     const [isOpen, setisOpen] = useState(false)
     const [spanItem, setspanItem] = useState(<BiMenuAltRight />)
@@ -28,12 +29,24 @@ const Header = ({
     }
 
 
+
+    const ClickMernHandler = () => {
+        setisFlightActive(false);
+        setisHotelActive(false);
+        setisVisaActive(false);
+        setisCarActive(false);
+        setisOpen(false);
+        setIsMernActive(true)
+    }
+
+
     const ClickFlightHandler = () => {
         setisFlightActive(true);
         setisHotelActive(false);
         setisVisaActive(false);
         setisCarActive(false);
-        setisOpen(false)
+        setisOpen(false);
+        setIsMernActive(false)
     }
 
     const ClickHotelHandler = () => {
@@ -42,6 +55,7 @@ const Header = ({
         setisVisaActive(false);
         setisCarActive(false);
         setisOpen(false)
+        setIsMernActive(false)
     }
 
     const ClickCarHandler = () => {
@@ -50,6 +64,7 @@ const Header = ({
         setisVisaActive(false);
         setisCarActive(true);
         setisOpen(false)
+        setIsMernActive(false)
     }
 
     const ClickVisaHandler = () => {
@@ -58,6 +73,7 @@ const Header = ({
         setisVisaActive(true);
         setisCarActive(false);
         setisOpen(false)
+        setIsMernActive(false)
 
     }
 
@@ -75,6 +91,12 @@ const Header = ({
                         <ReactIconStyled><FaHome /></ReactIconStyled>
                         <span onClick={handleHomeClick}>Home</span>
                     </HeaderListItem>
+
+                    <HeaderListItem onClick={ClickMernHandler} active={isMernActive}>
+                        <MernIconStyled><FaNodeJs /></MernIconStyled>
+                        <span onClick={handleRefMernClick}>Full-Stack Projects</span>
+                    </HeaderListItem>
+
                     <HeaderListItem onClick={ClickHotelHandler} active={isHotelActive}>
                         <ReactIconStyled><FaReact /></ReactIconStyled>
                         <span onClick={handleRefReactClick}>React Projects</span>

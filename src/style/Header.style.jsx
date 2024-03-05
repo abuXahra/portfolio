@@ -45,7 +45,10 @@ export const ReactIconStyled = styled.span`
 color: #61DAFB;
 cursor: pointer;
 `
-
+export const MernIconStyled = styled.span`
+    color: yellow;
+    cursor: pointer;
+`
 export const HamburgerIconStyled = styled.span`
 color: #fff;
 cursor: pointer;
