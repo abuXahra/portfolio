@@ -40,7 +40,6 @@ const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
     return (
         <StyleHomePage>
             {/* header section */}
-                   {/* header section */}
             <HeaderSection>
                 <Overlay>
                     <OverlayContent>
