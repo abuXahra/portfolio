@@ -1,4 +1,6 @@
+
 import styled from "styled-components"
+
 
 export const StyleHomePage = styled.div`
 min-height: 100vh;
@@ -76,6 +78,7 @@ export const SearcContainer = styled.div`
 export const ProfilePicture = styled.div`
   
     width: 50%;
+    height: 50%;
     padding: 5px;
     border-radius: 100%;
     background-color: white;
