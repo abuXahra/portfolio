@@ -1,5 +1,5 @@
 import news from "../images/mern/news.PNG";
-
+import manzo from "../images/mern/manzo.PNG";
 export const mern = [
   {
     title: "News Blog",
@@ -11,7 +11,7 @@ export const mern = [
   {
     title: "Manzo Travels Website",
     description: "Travel and Tour Agency Website",
-    imgUrl: news,
+    imgUrl: manzo,
     siteUrl: "https://manzotravelandtours.netlify.app/",
     status: "Online",
   },
