@@ -18,7 +18,7 @@ import { projectItems } from '../data/projectItems'
 import { projects } from '../data/project'
 import { flutter } from '../data/flutter'
 import { mern } from '../data/mern';
-import pdfFile from '../pdf/cv.pdf'
+import pdfFile from '../pdf/resume.pdf'
 
 
 const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
@@ -49,15 +49,14 @@ const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
                             </ProfilePicture>
                             <ProfileDetail>
                                 <h3>ISAH ABDULMUMIN</h3><br /><br />
-                                He is an IT specialist with superb knowledge and a cross-functional
-                                background in successful software development, and innovative
-                                technical support solutions. He has garnered valuable workplace
-                                experience and his over 10 years of work experience in the IT sphere makes
-                                him an asset to the workplace  <br /><br />
-                                Lead Web Developer || Full-Stack Developer (MERN), WordPress, React Js  and Flutter Developer || IT Consultant || Project Manager || Project Coordinator
+                                I am <address></address>n accomplished IT specialist with over 10 years of experience, I excel in troubleshooting complex issues and
+                                implementing effective IT management strategies. My diverse background spans innovative technical support solutions
+                                and cross-functional project management, equipping me to deliver exceptional results and drive technological
+                                advancements. My extensive experience and proven track record make me a valuable asset to any organization.
+  <br /><br />Lead Web Developer || Full-Stack Software Developer (MERN), React Js, Next js and React Native,|| IT Consultant || Project Manager || Project Coordinator
                                 <br /><br />
                                 <h3>Core Competency</h3>
-                                - MERN Stack - Wordpress - Flutter
+                                - MERN Stack - NextJS - React Native
                                 <br />
                                 <b></b><br />
 
@@ -91,7 +90,7 @@ const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
                 <hr />
                 <CertContainer>
                     <ul>
-                        <li>Software Development (MERN)</li>
+                        <li>Full-Stack Software Development (MERN)</li>
                         <li>Frontend Development React JS</li>
                         <li>Digital Entrepreneur Capacity Building for Industry Stakeholders</li>
                         <li>Introduction to Flutter Development using Dart</li>

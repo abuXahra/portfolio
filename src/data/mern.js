@@ -1,5 +1,7 @@
 import news from "../images/mern/news.PNG";
 import manzo from "../images/mern/manzo.PNG";
+import inventory from "../images/mern/inventory.PNG";
+
 export const mern = [
   {
     title: "News Blog",
@@ -12,7 +14,15 @@ export const mern = [
     title: "Manzo Travels Website",
     description: "Travel and Tour Agency Website",
     imgUrl: manzo,
-    siteUrl: "https://manzotravelandtours.netlify.app/",
+    siteUrl: "https://travel-tour-sigma.vercel.app/",
+    status: "Online",
+  },
+
+  {
+    title: "Inventory Software",
+    description: "Inventory Management Software",
+    imgUrl: inventory,
+    siteUrl: "https://inventory-three-livid.vercel.app/dashboard/home/overview",
     status: "Online",
   },
 ];
