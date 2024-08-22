@@ -49,10 +49,11 @@ const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
                             </ProfilePicture>
                             <ProfileDetail>
                                 <h3>ISAH ABDULMUMIN</h3><br /><br />
-                                I am <address></address>n accomplished IT specialist with over 10 years of experience, I excel in troubleshooting complex issues and
-                                implementing effective IT management strategies. My diverse background spans innovative technical support solutions
-                                and cross-functional project management, equipping me to deliver exceptional results and drive technological
-                                advancements. My extensive experience and proven track record make me a valuable asset to any organization.
+                                An accomplished IT specialist with over 10 years of experience, I excel in troubleshooting complex issues and
+                                implementing effective IT management strategies. My diverse background spans innovative technical support
+                                solutions and cross-functional project management, equipping me to deliver exceptional results and drive
+                                technological advancements. My extensive experience and proven track record make me a valuable asset to any
+                                organization.
   <br /><br />Lead Web Developer || Full-Stack Software Developer (MERN), React Js, Next js and React Native,|| IT Consultant || Project Manager || Project Coordinator
                                 <br /><br />
                                 <h3>Core Competency</h3>
