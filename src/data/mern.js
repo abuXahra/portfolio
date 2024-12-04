@@ -2,8 +2,16 @@ import news from "../images/mern/news.PNG";
 import manzo from "../images/mern/manzo.PNG";
 import inventory from "../images/mern/inventory.PNG";
 import blogDashboard from "../images/mern/blogDashboard.PNG";
+import formPicture from "../images/mern/form.PNG";
 
 export const mern = [
+  {
+    title: "User Data Form",
+    description: "Form for saving User into database",
+    imgUrl: formPicture,
+    siteUrl: "https://skymemorialforum.onrender.com/",
+    status: "Online",
+  },
   {
     title: "News Blog Dashboard",
     description: "Dashboard for a news blog Web App",
