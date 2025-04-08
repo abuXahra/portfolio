@@ -63,7 +63,7 @@ const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
 
                                 <div>
                                     <a href="https://github.com/abuXahra">Github Profile</a>
-                                    <a href={pdfFile}>Download my CV here</a>
+                                    <a style={{border: "1px dot yellow"}} href={pdfFile}>Download my CV here</a>
                                 </div>
                             </ProfileDetail>
 

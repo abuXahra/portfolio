@@ -4,13 +4,13 @@ import inventory from "../images/mern/inventory.PNG";
 import blogDashboard from "../images/mern/blogDashboard.PNG";
 import formPicture from "../images/mern/form.PNG";
 import inventory2 from "../images/mern/ainventory.PNG";
-import inventory2 from "../images/mern/flight_tickecting.PNG";
+import flightTicketing from "../images/mern/flight_tickecting.PNG";
 
 export const mern = [
   {
     title: "Manzo Travels  Web App",
     description: "Travel and Tour Agency Ticketing Website",
-    imgUrl: manzo,
+    imgUrl: flightTicketing,
     siteUrl: "https://manzotravels.com",
     status: "Online",
   },
