@@ -57,7 +57,7 @@ const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
   <br /><br />Lead Web Developer || Full-Stack Software Developer (MERN), React Js, Next js and React Native,|| IT Consultant || Project Manager || Project Coordinator
                                 <br /><br />
                                 <h3>Core Competency</h3>
-                                - MERN Stack - NextJS - React Native
+                                - MERN Stack - NextJS - ReactJS - React Native
                                 <br />
                                 <b></b><br />
 
