@@ -233,7 +233,7 @@ const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
                 </ProjectDelivered>
             </Container>
 
-            <Container ref={refWordpress}>
+            {/* <Container ref={refWordpress}>
                 <h2>Wordpress Project Delivered</h2>
                 <hr />
                 <SpaceStyled2 />
@@ -276,9 +276,9 @@ const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
                     ))}
                 </ProjectDelivered>
                 <SpaceStyled />
-            </Container>
+            </Container> */}
 
-            <Container
+            {/* <Container
                 bg={'#F7FAFD'}
                 ref={refFlutter}
             >
@@ -323,7 +323,7 @@ const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
                         </ProjectCardf>
                     ))}
                 </ProjectDelivered>
-            </Container>
+            </Container> */}
 
         </StyleHomePage>
     );
