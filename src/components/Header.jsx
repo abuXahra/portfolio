@@ -101,14 +101,14 @@ const Header = ({
                         <ReactIconStyled><FaReact /></ReactIconStyled>
                         <span onClick={handleRefReactClick}>React Projects</span>
                     </HeaderListItem>
-                    <HeaderListItem onClick={ClickFlightHandler} active={isFlightActive}>
+                    {/* <HeaderListItem onClick={ClickFlightHandler} active={isFlightActive}>
                         <WordpressIconStyled> <FaWordpressSimple /></WordpressIconStyled>
                         <span onClick={handleWordpressClick}>Worpress Projects</span>
                     </HeaderListItem>
                     <HeaderListItem onClick={ClickVisaHandler} active={isVisaActive}>
                         <FlutterIconStyled><SiFlutter /></FlutterIconStyled>
                         <span onClick={handleFlutterClick}>Flutter Projects</span>
-                    </HeaderListItem>
+                    </HeaderListItem> */}
                 </HeaderList>
             </HeaderContainer>
         </HeaderStyled>
