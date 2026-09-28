@@ -1,23 +1,22 @@
 import news from "../images/mern/news.PNG";
-import manzo from "../images/mern/manzo.PNG";
-import inventory from "../images/mern/inventory.PNG";
+import etmcsventory from "../images/mern/etmcsventory.JPG";
+import flowventory from "../images/mern/flowVentory.PNG";
 import blogDashboard from "../images/mern/blogDashboard.PNG";
 import formPicture from "../images/mern/form.PNG";
 import inventory2 from "../images/mern/ainventory.PNG";
-import flightTicketing from "../images/mern/flight_tickecting.PNG";
 
 export const mern = [
   {
     title: "etmcsVentory",
     description: "Inventory Managment Software for ETMCS",
-    imgUrl: flightTicketing,
+    imgUrl: etmcsventory,
     siteUrl: "https://etmcsventory.etmcs.com.ng/",
     status: "Online",
   },
   {
     title: "flowVentorye",
     description: "Inventory Managment Software for Jewel Zenith Galore",
-    imgUrl: flightTicketing,
+    imgUrl: flowventory,
     siteUrl: "https://etmcsventory.etmcs.com.ng/",
     status: "Online",
   },
