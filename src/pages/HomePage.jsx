@@ -46,7 +46,15 @@ const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
                         <SearcContainer>
                             <ProfilePicture>
                                 <img src={Profile} alt="" srcset="" />
-                                 <ProfileDetail>
+                            </ProfilePicture>
+                            <ProfileDetail>
+                                <h3>ISAH ABDULMUMIN</h3><br /><br />
+                              <p>I am a results-driven full-stack software engineer and AI-assisted software developer with over 4 years of experience designing, developing, and deploying scalable, responsive, and high-performance web applications. Proficient in modern frontend technologies, including React.js, Next.js, TypeScript, JavaScript, Tailwind CSS, and Vite, with strong backend development skills in Node.js, Express.js, MongoDB, Mongoose, PostgreSQL, and Supabase.</p>
+
+<p>Experienced in building Software-as-a-Service (SaaS) platforms, developing RESTful APIs, implementing secure authentication, managing databases, and deploying production-ready applications using Vercel, Netlify, Render, and cPanel. Skilled in Git and GitHub for version control and collaborative development.</p>
+
+<p>Passionate about leveraging artificial intelligence to accelerate software development, with hands-on experience using ChatGPT Work, Claude AI, and Cursor AI for AI-assisted coding, debugging, and workflow optimization. A proactive problem-solver committed to writing clean, maintainable code, delivering intuitive user experiences, and developing innovative software solutions that address real-world business challenges.</p>
+  <br /><br />Lead Web Developer || Full-Stack Software Developer (MERN) || AI Web Developer
                                 <br /><br />
                                 <h3>Core Competency</h3>
                                  MERN Stack - NextJS - ReactJS - AI Tools
@@ -57,16 +65,6 @@ const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
                                     <a href="https://github.com/abuXahra">Github Profile</a>
                                     {/* <a style={{border: "1px dot yellow"}} href={pdfFile}>Download my CV here</a> */}
                                 </div>
-                            </ProfileDetail>
-                            </ProfilePicture>
-                            <ProfileDetail>
-                                <h3>ISAH ABDULMUMIN</h3><br /><br />
-                              <p>I am a results-driven full-stack software engineer and AI-assisted software developer with over 4 years of experience designing, developing, and deploying scalable, responsive, and high-performance web applications. Proficient in modern frontend technologies, including React.js, Next.js, TypeScript, JavaScript, Tailwind CSS, and Vite, with strong backend development skills in Node.js, Express.js, MongoDB, Mongoose, PostgreSQL, and Supabase.</p>
-
-                                <p>Experienced in building Software-as-a-Service (SaaS) platforms, developing RESTful APIs, implementing secure authentication, managing databases, and deploying production-ready applications using Vercel, Netlify, Render, and cPanel. Skilled in Git and GitHub for version control and collaborative development.</p>
-
-                                <p>Passionate about leveraging artificial intelligence to accelerate software development, with hands-on experience using ChatGPT Work, Claude AI, and Cursor AI for AI-assisted coding, debugging, and workflow optimization. A proactive problem-solver committed to writing clean, maintainable code, delivering intuitive user experiences, and developing innovative software solutions that address real-world business challenges.</p>
-                                <br /><br />Lead Web Developer || Full-Stack Software Developer (MERN) || AI Web Developer
                             </ProfileDetail>
 
                         </SearcContainer>
