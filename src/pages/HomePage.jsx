@@ -49,21 +49,21 @@ const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
                             </ProfilePicture>
                             <ProfileDetail>
                                 <h3>ISAH ABDULMUMIN</h3><br /><br />
-                                An accomplished IT specialist with over 10 years of experience, I excel in troubleshooting complex issues and
-                                implementing effective IT management strategies. My diverse background spans innovative technical support
-                                solutions and cross-functional project management, equipping me to deliver exceptional results and drive
-                                technological advancements. My extensive experience and proven track record make me a valuable asset to any
-                                organization.
-  <br /><br />Lead Web Developer || Full-Stack Software Developer (MERN), React Js, Next js and React Native,|| IT Consultant || Project Manager || Project Coordinator
+                              <p>I am a results-driven full-stack software engineer and AI-assisted software developer with over 4 years of experience designing, developing, and deploying scalable, responsive, and high-performance web applications. Proficient in modern frontend technologies, including React.js, Next.js, TypeScript, JavaScript, Tailwind CSS, and Vite, with strong backend development skills in Node.js, Express.js, MongoDB, Mongoose, PostgreSQL, and Supabase.</p>
+
+<p>Experienced in building Software-as-a-Service (SaaS) platforms, developing RESTful APIs, implementing secure authentication, managing databases, and deploying production-ready applications using Vercel, Netlify, Render, and cPanel. Skilled in Git and GitHub for version control and collaborative development.</p>
+
+<p>Passionate about leveraging artificial intelligence to accelerate software development, with hands-on experience using ChatGPT Work, Claude AI, and Cursor AI for AI-assisted coding, debugging, and workflow optimization. A proactive problem-solver committed to writing clean, maintainable code, delivering intuitive user experiences, and developing innovative software solutions that address real-world business challenges.</p>
+  <br /><br />Lead Web Developer || Full-Stack Software Developer (MERN) || AI Web Developer
                                 <br /><br />
                                 <h3>Core Competency</h3>
-                                - MERN Stack - NextJS - ReactJS - React Native
+                                 MERN Stack - NextJS - ReactJS - AI Tools
                                 <br />
                                 <b></b><br />
 
                                 <div>
                                     <a href="https://github.com/abuXahra">Github Profile</a>
-                                    <a style={{border: "1px dot yellow"}} href={pdfFile}>Download my CV here</a>
+                                    {/* <a style={{border: "1px dot yellow"}} href={pdfFile}>Download my CV here</a> */}
                                 </div>
                             </ProfileDetail>
 
@@ -190,7 +190,7 @@ const HomePage = ({ refMern, refReact, refWordpress, refFlutter }) => {
                 bg={'#F7FAFD'}
                 ref={refReact}
             >
-                <h2>React JS Projects Delivered</h2>
+                <h2>React JS Projects</h2>
                 <hr />
                 <SpaceStyled2 />
 

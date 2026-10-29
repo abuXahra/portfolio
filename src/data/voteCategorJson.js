@@ -15,6 +15,8 @@ import { SiAdobefonts, SiDart, SiHuawei } from "react-icons/si";
 import { GiParachute, GiWireframeGlobe } from "react-icons/gi";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FiFigma } from "react-icons/fi";
+import { SiTypescript } from "react-icons/si";
+
 export const voteCategories = [
   {
     voteIcon: <FaNodeJs />,
@@ -32,13 +34,19 @@ export const voteCategories = [
     arrowIcon: <RiLoader3Line />,
   },
   {
-    voteIcon: <FaReact />,
-    title: "React Js",
+    voteIcon: <SiTypescript />,
+    title: "Typscript",
     arrowIcon: <RiLoader3Line />,
   },
   {
-    voteIcon: <FaWordpress />,
-    title: "Wordpress",
+    voteIcon: "",
+    title: "Tailwind",
+    arrowIcon: <RiLoader3Line />,
+  },
+
+  {
+    voteIcon: <FaReact />,
+    title: "React Js",
     arrowIcon: <RiLoader3Line />,
   },
   {
@@ -49,18 +57,6 @@ export const voteCategories = [
   {
     voteIcon: <FiFigma />,
     title: "Figma",
-    arrowIcon: <RiLoader3Line />,
-  },
-
-  {
-    voteIcon: <RiFlutterFill />,
-    title: "Flutter",
-    arrowIcon: <RiLoader3Line />,
-  },
-
-  {
-    voteIcon: <SiDart />,
-    title: "Dart",
     arrowIcon: <RiLoader3Line />,
   },
   {
@@ -84,30 +80,4 @@ export const voteCategories = [
     title: "Github",
     arrowIcon: <RiLoader3Line />,
   },
-  {
-    voteIcon: <SiAdobefonts />,
-    title: "Adobe Fireworks",
-    arrowIcon: <RiLoader3Line />,
-  },
-  {
-    voteIcon: <BsFileWord />,
-    title: "Microsoft Word",
-    arrowIcon: <RiLoader3Line />,
-  },
-  {
-    voteIcon: <GiParachute />,
-    title: "Corel Draw",
-    arrowIcon: <RiLoader3Line />,
-  },
-  {
-    voteIcon: <FaFilePowerpoint />,
-    title: "Power Point",
-    arrowIcon: <RiLoader3Line />,
-  },
-
-  // {
-  //     voteIcon: <SiHuawei />,
-  //     title: "Huawei Networking",
-  //     arrowIcon: <BiLoaderAlt />,
-  // },
 ];

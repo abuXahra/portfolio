@@ -4,8 +4,41 @@ import flowventory from "../images/mern/flowVentory.PNG";
 import blogDashboard from "../images/mern/blogDashboard.PNG";
 import formPicture from "../images/mern/form.PNG";
 import inventory2 from "../images/mern/ainventory.PNG";
+import abxcybertech from "../images/mern/abx3.JPG";
+import flowVentoryMulti from "../images/mern/abx2.JPG";
+import letdGen from "../images/mern/abx1.JPG";
+import ngo from "../images/mern/ngo.JPG";
 
 export const mern = [
+  {
+    title: "NGO",
+    description: "Humanitarian Organization Website ",
+    imgUrl: ngo,
+    siteUrl: "https://ngo-pink-two.vercel.app/",
+    status: "Online",
+  },
+  {
+    title: "Tech Startup Website",
+    description: "CMS Web app for ABX CYBER TECH",
+    imgUrl: abxcybertech,
+    siteUrl: "https://abxcybertech.vercel.app/",
+    status: "Online",
+  },
+  {
+    title: "SAAS Project",
+    description: "Smart mulit-tenant invetory management software",
+    imgUrl: flowVentoryMulti,
+    siteUrl: "https://flowventory-saas.vercel.app/",
+    status: "Online",
+  },
+  {
+    title: "Lead Gen Software",
+    description: "B2B Lead Intellegent software",
+    imgUrl: letdGen,
+    siteUrl: "https://abxprosia.netlify.app/",
+    status: "Online",
+  },
+
   {
     title: "etmcsVentory",
     description: "Inventory Managment Software for ETMCS",
